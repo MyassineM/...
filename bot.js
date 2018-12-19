@@ -35,7 +35,7 @@ client.on('guildDelete', guild => {
   .setDescription("**We Are Sorry For Any Problems In The Bot **")
    .addField("🌍 **| CONTACT :**   ",
 " `-contact` `-sug` `-bug` ")
- .addField('🔗 **| SUPPORT SERVER** :' , "  https://discord.gg/ArGwWfH")
+ .addField('🔗 **| SUPPORT SERVER** :' , "   https://discord.gg/MdrUP5t ")
             .setFooter(`Dreams`, 'https://cdn.discordapp.com/attachments/402070843032731648/417407034775044097/image.jpg')
       guild.owner.send(star)
 })
@@ -850,7 +850,7 @@ client.on('message', message => {
 
 client.on('message', message => {
 let args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('-bc_b')){
+if (message.content.startsWith('-bc1')){
 
  if(message.channel.type === "dm") return;
 
@@ -874,11 +874,11 @@ client.on('message', message => {
    var z = "```"
    let embed = new Discord.RichEmbed()
     let args = message.content.split(' ').slice(1).join(' ');
-if(message.content.split(' ')[0] == prefix + 'bc') {
+if(message.content.split(' ')[0] == prefix + 'bc2') {
 
      if(!message.member.hasPermission('ADMINISTRATOR')) return;
     if (!args[1]) {
-message.channel.send("**-bc <message>**").then(msg => msg.delete(5000));
+message.channel.send("**-bc1/2 <message>**").then(msg => msg.delete(5000));
 return;
 }
 
@@ -970,7 +970,7 @@ client.on("message", message => {
 client.on('message' , message => {
 
   if (message.author.bot) return;
-    if(message.content.startsWith( "-invite")) {
+    if(message.content.startsWith( "-inLvite")) {
  
 const embed = new Discord.RichEmbed()
   .setFooter(`©  Dream™ `)
@@ -987,7 +987,7 @@ message.channel.sendEmbed(embed);
 client.on('message' , message => {
 
   if (message.author.bot) return;
-    if(message.content == ( "-invite")) {
+    if(message.content == ( "-inviLte")) {
  
 const embed = new Discord.RichEmbed()
   .setFooter(`©  Dream™ `)
