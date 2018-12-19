@@ -1599,7 +1599,7 @@ function timeCon(time) {
  
  
 client.on('message', message => {
-    if (message.content === "-info") {
+    if (message.content === "-inLfo") {
     if(!message.channel.guild) return;
     const millis = new Date().getTime() - message.guild.createdAt.getTime();
     const now = new Date();
