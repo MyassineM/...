@@ -34,7 +34,7 @@ client.on('guildDelete', guild => {
   .setColor("ffffff")
   .setDescription("**We Are Sorry For Any Problems In The Bot **")
    .addField("🌍 **| CONTACT :**   ",
-" `-contact` `-sug` `-bug` ")
+" `-cLontact` `-sLug` `-bLug` ")
  .addField('🔗 **| SUPPORT SERVER** :' , "  https://discord.gg/ArGwWfH")
             .setFooter(`Dreams`, 'https://cdn.discordapp.com/attachments/402070843032731648/417407034775044097/image.jpg')
       guild.owner.send(star)
@@ -970,7 +970,7 @@ client.on("message", message => {
 client.on('message' , message => {
 
   if (message.author.bot) return;
-    if(message.content.startsWith( "-invite")) {
+    if(message.content.startsWith( "-iLnvite")) {
  
 const embed = new Discord.RichEmbed()
   .setFooter(`©  Dream™ `)
@@ -1006,7 +1006,7 @@ message.channel.sendEmbed(embed);
 client.on('message' , message => {
  var prefix = "-";
   if (message.author.bot) return;
-    if(message.content == (prefix  + 'support')) {
+    if(message.content == (prefix  + 'sLupport')) {
   
 const embed = new Discord.RichEmbed()
    .setColor(0xd3d0c4)
@@ -1599,7 +1599,7 @@ function timeCon(time) {
  
  
 client.on('message', message => {
-    if (message.content === "-info") {
+    if (message.content === "-iLnfo") {
     if(!message.channel.guild) return;
     const millis = new Date().getTime() - message.guild.createdAt.getTime();
     const now = new Date();
@@ -4702,7 +4702,7 @@ message.author.sendEmbed(embed)
 
  
     client.on('message', function(message) {
-    if (message.content ===  '-ccolors'){
+    if (message.content ===  '-colors'){
               if (!message.member.hasPermission("MANAGE_ROLES"))  return;
                       
                          if(message.guild.roles.find("name","5")) return message.reply("You're Already Have Colors ! :art:");
